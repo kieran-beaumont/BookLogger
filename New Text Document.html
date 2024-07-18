@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>My Book Library</h1>
+    <form id="bookForm">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <input type="text" id="genre" placeholder="Genre">
+        <input type="text" id="series" placeholder="Series">
+        <input type="number" id="rating" placeholder="Rating (1-5)" min="1" max="5">
+        <input type="text" id="status" placeholder="Status (e.g., Reading, Completed)">
+        <textarea id="thoughts" placeholder="Quick Thoughts"></textarea>
+        <textarea id="description" placeholder="Description"></textarea>
+        <input type="url" id="cover" placeholder="Cover Image URL">
+        <button type="submit">Add Book</button>
+    </form>
+
+    <div id="bookList"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
